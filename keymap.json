@@ -1,0 +1,44 @@
+[
+  //delete
+  {
+    "context": "ProjectPanel",
+    "bindings": { "delete": ["project_panel::Trash", { "skip_prompt": true }] },
+  },
+  //run
+  {
+    "context": "(Editor && extension == py)",
+    "bindings": { "f5": ["task::Spawn", { "task_name": "Run Python" }] },
+  },
+  {
+    "context": "(Editor && extension == ps1)",
+    "bindings": { "f5": ["task::Spawn", { "task_name": "Run pwsh" }] },
+  },
+  //search
+  {
+    "context": "Pane",
+    "bindings": { "alt-f3": "search::SelectPreviousMatch" },
+  },
+  //panel
+  { "bindings": { "alt-a": "agent::ToggleFocus" } },
+  { "bindings": { "alt-s": "project_panel::Toggle" } },
+  { "bindings": { "alt-d": "outline_panel::ToggleFocus" } },
+  //wrap
+  {
+    "context": "(Editor && mode == full)",
+    "bindings": { "alt-z": "editor::ToggleSoftWrap" },
+  },
+  //preview
+  {
+    "context": "Editor && (extension == md || extension == svg)",
+    "bindings": { "alt-v": "markdown::OpenPreviewToTheSide" },
+  },
+  //terminal
+  {
+    "context": "Workspace",
+    "bindings": { "ctrl-t": "terminal_panel::Toggle" },
+  },
+  {
+    "context": "Terminal",
+    "bindings": { "ctrl-w": "pane::CloseActiveItem" },
+  },
+]

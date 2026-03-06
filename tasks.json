@@ -1,0 +1,12 @@
+[
+  {
+    "label": "Run Python",
+    "command": "python",
+    "args": ["\"$ZED_FILE\""],
+  },
+  {
+    "label": "Run pwsh",
+    "command": "pwsh",
+    "args": ["-File", "\"$ZED_FILE\""],
+  },
+]

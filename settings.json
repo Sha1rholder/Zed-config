@@ -1,0 +1,67 @@
+{
+  "theme": "Polycarbonate Dark",
+
+  //font
+  "ui_font_fallbacks": ["Microsoft YaHei"],
+  "buffer_font_size": 18,
+  "buffer_font_fallbacks": ["Microsoft YaHei"],
+  "buffer_line_height": "standard",
+
+  //top to down
+  "title_bar": { "show_user_menu": false },
+  "toolbar": { "quick_actions": false, "breadcrumbs": false },
+  "tab_bar": { "show_nav_history_buttons": false },
+  "debugger": { "button": false },
+  "terminal": { "button": false },
+  "search": { "center_on_match": true, "button": false },
+  "project_panel": {
+    "button": false,
+    "entry_spacing": "standard",
+    "hide_root": true,
+    "bold_folder_labels": true,
+  },
+  "collaboration_panel": { "button": false },
+  "notification_panel": { "button": false },
+  "outline_panel": { "button": false },
+  "git_panel": { "button": false },
+
+  //editor
+  "soft_wrap": "bounded",
+  "show_whitespaces": "boundary",
+  "drag_and_drop_selection": { "delay": 0 },
+  "minimap": { "show": "always" },
+  "gutter": {
+    "line_numbers": false,
+    "folds": false,
+    "runnables": false,
+    "breakpoints": false,
+  },
+  "git": { "git_gutter": "hide", "inline_blame": { "enabled": false } },
+
+  //AI
+  "agent_ui_font_size": 18,
+  "agent_buffer_font_size": 18,
+  "agent": {
+    "enable_feedback": false,
+    "button": false,
+    "default_profile": "minimal",
+    "dock": "left",
+    "use_modifier_to_send": true,
+    "default_model": { "provider": "copilot_chat", "model": "gpt-5-mini" },
+  },
+
+  //behavior
+  "extend_comment_on_newline": false,
+  "session": { "trust_all_worktrees": true },
+  "when_closing_with_no_tabs": "close_window",
+
+  //languages
+  "languages": {
+    "Markdown": {
+      "hard_tabs": true,
+      "format_on_save": "on",
+      "language_servers": ["rumdl"],
+      "formatter": "language_server",
+    },
+  },
+}
