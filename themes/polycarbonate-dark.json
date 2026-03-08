@@ -2,40 +2,61 @@
   "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
   "name": "Polycarbonate Dark themes",
   "author": "Sha1rholder",
-  "description": "Transparent dark themes modified from default Zed themes.",
+  "description": "Experimental transparent dark themes modified from default Zed themes.",
   "themes": [
     {
       "name": "Polycarbonate Ayu Dark",
       "appearance": "dark",
       "style": {
+        //background
         "background.appearance": "transparent",
         "background": "#000D",
         "editor.background": "#0000",
         "editor.gutter.background": "#0000",
-        "panel.background": "#0000",
         "terminal.background": "#0000",
 
+        //top to bottom
         "title_bar.background": "#000D",
         "tab_bar.background": "#0000",
+        "tab.active_background": "#000",
         "tab.inactive_background": "#0000",
         "toolbar.background": "#0000",
         "status_bar.background": "#000D",
 
+        //panel
+        "panel.background": "#0000",
+        "element.selected": "#FFFFFF19",
+        "element.background": "#FFFFFF19",
+        "editor.active_line.background": "#FFFFFF19",
+        "ghost_element.selected": "#FFFFFF19",
+        "ghost_element.hover": "#FFFFFF19",
+        "ghost_element.active": "#FFFFFF19",
+
+        //surface
         "elevated_surface.background": "#000D",
-        "surface.background": "#FFF1",
+        "surface.background": "#FFFFFF19",
 
-        "search.match_background": "#333",
-        "search.active_match_background": "#666",
+        //pop-up
+        "error.background": "#000D",
+        "warning.background": "#000D",
 
+        //git
+        "created": "#0F0B",
+        "deleted": "#F00B",
+        "modified": "#FF0B",
+
+        //scrollbar
         "scrollbar.track.border": "#0000",
         "scrollbar.thumb.background": "#FFF3",
         "scrollbar.thumb.hover_background": "#FFF4",
 
-        "error.background": "#000D",
-        "warning.background": "#000D",
+        //search
+        "search.match_background": "#333",
+        "search.active_match_background": "#666",
 
+        //forground
         "editor.invisible": "#555",
-        "predictive": "#568",
+        "predictive": "#57A",
         "players": [
           {
             "cursor": "#5ac1feff",
@@ -81,13 +102,13 @@
         "syntax": {
           "attribute": { "color": "#5ac1feff" },
           "boolean": { "color": "#d2a6ffff" },
-          "comment": { "color": "#594", "background_color": "#0001" },
+          "comment": { "color": "#7D7", "background_color": "#0001" },
           "comment.doc": { "color": "#8c8b88ff" },
           "constant": { "color": "#d2a6ffff" },
           "constructor": { "color": "#5ac1feff" },
           "embedded": { "color": "#bfbdb6ff" },
           "emphasis": { "color": "#5ac1feff", "font_style": "italic" },
-          "emphasis.strong": { "color": "#6CF", "font_weight": 700 },
+          "emphasis.strong": { "color": "#5ac1feff", "font_weight": 700 },
           "enum": { "color": "#fe8f40ff" },
           "function": { "color": "#ffb353ff" },
           "hint": { "color": "#628b80ff" },
@@ -110,14 +131,14 @@
           "punctuation.special": { "color": "#d2a6ffff" },
           "selector": { "color": "#d2a6ffff" },
           "selector.pseudo": { "color": "#5ac1feff" },
-          "string": { "color": "#DDB" },
+          "string": { "color": "#a9d94bff" },
           "string.escape": { "color": "#8c8b88ff" },
           "string.regex": { "color": "#95e6cbff" },
           "string.special": { "color": "#e5b572ff" },
           "string.special.symbol": { "color": "#fe8f40ff" },
           "tag": { "color": "#5ac1feff" },
           "text.literal": { "color": "#fe8f40ff" },
-          "title": { "color": "#6CF", "font_weight": 700 },
+          "title": { "color": "#bfbdb6ff", "font_weight": 700 },
           "type": { "color": "#59c2ffff" },
           "variable": { "color": "#bfbdb6ff" },
           "variant": { "color": "#5ac1feff" }
@@ -128,34 +149,55 @@
       "name": "Polycarbonate Gruvbox Dark",
       "appearance": "dark",
       "style": {
+        //background
         "background.appearance": "transparent",
         "background": "#000D",
         "editor.background": "#0000",
         "editor.gutter.background": "#0000",
-        "panel.background": "#0000",
         "terminal.background": "#0000",
 
+        //top to bottom
         "title_bar.background": "#000D",
         "tab_bar.background": "#0000",
+        "tab.active_background": "#000",
         "tab.inactive_background": "#0000",
         "toolbar.background": "#0000",
         "status_bar.background": "#000D",
 
+        //panel
+        "panel.background": "#0000",
+        "element.selected": "#FFFFFF19",
+        "element.background": "#FFFFFF19",
+        "editor.active_line.background": "#FFFFFF19",
+        "ghost_element.selected": "#FFFFFF19",
+        "ghost_element.hover": "#FFFFFF19",
+        "ghost_element.active": "#FFFFFF19",
+
+        //surface
         "elevated_surface.background": "#000D",
-        "surface.background": "#FFF1",
+        "surface.background": "#FFFFFF19",
 
-        "search.match_background": "#333",
-        "search.active_match_background": "#666",
+        //pop-up
+        "error.background": "#000D",
+        "warning.background": "#000D",
 
+        //git
+        "created": "#0F0B",
+        "deleted": "#F00B",
+        "modified": "#FF0B",
+
+        //scrollbar
         "scrollbar.track.border": "#0000",
         "scrollbar.thumb.background": "#FFF3",
         "scrollbar.thumb.hover_background": "#FFF4",
 
-        "error.background": "#000D",
-        "warning.background": "#000D",
+        //search
+        "search.match_background": "#333",
+        "search.active_match_background": "#666",
 
+        //forground
         "editor.invisible": "#555",
-        "predictive": "#568",
+        "predictive": "#57A",
         "players": [
           {
             "cursor": "#83a598ff",
@@ -201,7 +243,7 @@
         "syntax": {
           "attribute": { "color": "#83a598ff" },
           "boolean": { "color": "#d3869bff" },
-          "comment": { "color": "#594", "background_color": "#0001" },
+          "comment": { "color": "#7D7", "background_color": "#0001" },
           "comment.doc": { "color": "#c6b697ff" },
           "constant": { "color": "#fabd2eff" },
           "constructor": { "color": "#83a598ff" },
@@ -250,34 +292,55 @@
       "name": "Polycarbonate One Dark",
       "appearance": "dark",
       "style": {
+        //background
         "background.appearance": "transparent",
         "background": "#000D",
         "editor.background": "#0000",
         "editor.gutter.background": "#0000",
-        "panel.background": "#0000",
         "terminal.background": "#0000",
 
+        //top to bottom
         "title_bar.background": "#000D",
         "tab_bar.background": "#0000",
+        "tab.active_background": "#000",
         "tab.inactive_background": "#0000",
         "toolbar.background": "#0000",
         "status_bar.background": "#000D",
 
+        //panel
+        "panel.background": "#0000",
+        "element.selected": "#FFFFFF19",
+        "element.background": "#FFFFFF19",
+        "editor.active_line.background": "#FFFFFF19",
+        "ghost_element.selected": "#FFFFFF19",
+        "ghost_element.hover": "#FFFFFF19",
+        "ghost_element.active": "#FFFFFF19",
+
+        //surface
         "elevated_surface.background": "#000D",
-        "surface.background": "#FFF1",
+        "surface.background": "#FFFFFF19",
 
-        "search.match_background": "#333",
-        "search.active_match_background": "#666",
+        //pop-up
+        "error.background": "#000D",
+        "warning.background": "#000D",
 
+        //git
+        "created": "#0F0B",
+        "deleted": "#F00B",
+        "modified": "#FF0B",
+
+        //scrollbar
         "scrollbar.track.border": "#0000",
         "scrollbar.thumb.background": "#FFF3",
         "scrollbar.thumb.hover_background": "#FFF4",
 
-        "error.background": "#000D",
-        "warning.background": "#000D",
+        //search
+        "search.match_background": "#333",
+        "search.active_match_background": "#666",
 
+        //forground
         "editor.invisible": "#555",
-        "predictive": "#568",
+        "predictive": "#57A",
         "players": [
           {
             "cursor": "#74ade8ff",
@@ -323,7 +386,7 @@
         "syntax": {
           "attribute": { "color": "#74ade8ff" },
           "boolean": { "color": "#bf956aff" },
-          "comment": { "color": "#594", "background_color": "#0001" },
+          "comment": { "color": "#7D7", "background_color": "#0001" },
           "comment.doc": { "color": "#878e98ff" },
           "constant": { "color": "#dfc184ff" },
           "constructor": { "color": "#73ade9ff" },
@@ -335,7 +398,7 @@
           "hint": { "color": "#788ca6ff" },
           "keyword": { "color": "#b477cfff" },
           "label": { "color": "#74ade8ff" },
-          "link_text": { "color": "#73ade9ff", "font_style": "normal" },
+          "link_text": { "color": "#73ade9ff" },
           "link_uri": { "color": "#6eb4bfff" },
           "namespace": { "color": "#dce0e5ff" },
           "number": { "color": "#bf956aff" },
@@ -352,7 +415,7 @@
           "punctuation.special": { "color": "#b1574bff" },
           "selector": { "color": "#dfc184ff" },
           "selector.pseudo": { "color": "#74ade8ff" },
-          "string": { "color": "#DDB" },
+          "string": { "color": "#a1c181ff" },
           "string.escape": { "color": "#878e98ff" },
           "string.regex": { "color": "#bf956aff" },
           "string.special": { "color": "#bf956aff" },
@@ -371,52 +434,73 @@
       "name": "Polycarbonate Sha1rholder (Experimental)",
       "appearance": "dark",
       "style": {
+        //background
         "background.appearance": "transparent",
         "background": "#000D",
         "editor.background": "#0000",
         "editor.gutter.background": "#0000",
-        "panel.background": "#0000",
         "terminal.background": "#0000",
 
+        //top to bottom
         "title_bar.background": "#000D",
         "tab_bar.background": "#0000",
+        "tab.active_background": "#000",
         "tab.inactive_background": "#0000",
         "toolbar.background": "#0000",
         "status_bar.background": "#000D",
 
+        //panel
+        "panel.background": "#0000",
+        "element.selected": "#FFFFFF19",
+        "element.background": "#FFFFFF19",
+        "editor.active_line.background": "#FFFFFF19",
+        "ghost_element.selected": "#FFFFFF19",
+        "ghost_element.hover": "#FFFFFF19",
+        "ghost_element.active": "#FFFFFF19",
+
+        //surface
         "elevated_surface.background": "#000D",
-        "surface.background": "#FFF1",
+        "surface.background": "#FFFFFF19",
 
-        "search.match_background": "#333",
-        "search.active_match_background": "#666",
+        //pop-up
+        "error.background": "#000D",
+        "warning.background": "#000D",
 
+        //git
+        "created": "#0F0B",
+        "deleted": "#F00B",
+        "modified": "#FF0B",
+
+        //scrollbar
         "scrollbar.track.border": "#0000",
         "scrollbar.thumb.background": "#FFF3",
         "scrollbar.thumb.hover_background": "#FFF4",
 
-        "error.background": "#000D",
-        "warning.background": "#000D",
+        //search
+        "search.match_background": "#333",
+        "search.active_match_background": "#666",
 
+        //forground
         "editor.invisible": "#555",
-        "predictive": "#568",
+        "predictive": "#57A",
         "players": [{ "selection": "#6AD8" }],
         "syntax": {
           "attribute": { "color": "#4BC" },
           "boolean": { "color": "#d2a6ffff" },
-          "comment": { "color": "#594", "background_color": "#0001" },
+          "comment": { "color": "#7D7", "background_color": "#0001" },
           "comment.doc": { "color": "#8c8b88ff" },
           "constant": { "color": "#d2a6ffff" },
           "constructor": { "color": "#4BC" },
           "embedded": { "color": "#bfbdb6ff" },
-          "emphasis": { "color": "#4BC", "font_style": "italic" },
+          "emphasis": { "color": "#CDF", "font_style": "italic" },
           "emphasis.strong": { "color": "#6CF", "font_weight": 700 },
           "enum": { "color": "#fe8f40ff" },
           "function": { "color": "#ffb353ff" },
           "hint": { "color": "#628b80ff" },
           "keyword": { "color": "#ff8f3fff" },
           "label": { "color": "#4BC" },
-          "link_text": { "color": "#fe8f40ff" },
-          "link_uri": { "color": "#aad84cff" },
+          "link_text": { "color": "#8BF" },
+          "link_uri": { "color": "#57F" },
           "namespace": { "color": "#bfbdb6ff" },
           "number": { "color": "#d2a6ffff" },
           "operator": { "color": "#f29668ff" },
@@ -428,7 +512,7 @@
           "punctuation.bracket": { "color": "#a6a5a0ff" },
           "punctuation.delimiter": { "color": "#a6a5a0ff" },
           "punctuation.list_marker": { "color": "#a6a5a0ff" },
-          "punctuation.markup": { "color": "#a6a5a0ff" },
+          "punctuation.markup": { "color": "#6CF" },
           "punctuation.special": { "color": "#d2a6ffff" },
           "selector": { "color": "#d2a6ffff" },
           "selector.pseudo": { "color": "#4BC" },
@@ -439,7 +523,7 @@
           "string.special.symbol": { "color": "#fe8f40ff" },
           "tag": { "color": "#4BC" },
           "text.literal": { "color": "#fe8f40ff" },
-          "title": { "color": "#6CF", "font_weight": 700 },
+          "title": { "color": "#DDB", "font_weight": 700 },
           "type": { "color": "#59c2ffff" },
           "variable": { "color": "#bfbdb6ff" },
           "variant": { "color": "#4BC" }
