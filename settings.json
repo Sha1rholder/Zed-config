@@ -1,5 +1,5 @@
 {
-  "theme": "Polycarbonate Ayu Dark",
+  "theme": "Polycarbonate Sha1rholder (Experimental)",
 
   //font
   "ui_font_fallbacks": ["Microsoft YaHei"],
@@ -45,7 +45,6 @@
   "when_closing_with_no_tabs": "close_window",
 
   //languages
-  "semantic_tokens": "combined",
   "languages": {
     "Markdown": {
       "hard_tabs": true,

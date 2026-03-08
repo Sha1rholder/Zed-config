@@ -5,7 +5,7 @@
   "description": "Test themes",
   "themes": [
     {
-      "name": "empty",
+      "name": "empty dark",
       "appearance": "dark",
       "style": {}
     },
@@ -19,13 +19,11 @@
         "editor.gutter.background": "#0000",
         "panel.background": "#0000",
         "terminal.background": "#0000",
-
         "title_bar.background": "#000D",
         "tab_bar.background": "#0000",
         "tab.inactive_background": "#0000",
         "toolbar.background": "#0000",
         "status_bar.background": "#000D",
-
         "elevated_surface.background": "#000D"
       }
     }

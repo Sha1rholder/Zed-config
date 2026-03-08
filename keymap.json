@@ -16,7 +16,7 @@
   //search
   {
     "context": "Pane",
-    "bindings": { "alt-f3": "search::SelectPreviousMatch" },
+    "bindings": { "f3": "search::SelectPreviousMatch" },
   },
   //panel
   { "bindings": { "alt-a": "agent::ToggleFocus" } },
