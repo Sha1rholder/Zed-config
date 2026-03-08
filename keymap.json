@@ -1,4 +1,8 @@
 [
+  //panel
+  { "bindings": { "alt-a": "agent::ToggleFocus" } },
+  { "bindings": { "alt-s": "project_panel::Toggle" } },
+  { "bindings": { "alt-d": "outline_panel::ToggleFocus" } },
   //delete
   {
     "context": "ProjectPanel",
@@ -13,18 +17,19 @@
     "context": "(Editor && extension == ps1)",
     "bindings": { "f5": ["task::Spawn", { "task_name": "Run pwsh" }] },
   },
+  //fold
+  {
+    "context": "Editor",
+    "bindings": { "alt-w": "editor::Fold", "alt-e": "editor::UnfoldLines" },
+  },
   //search
   {
     "context": "Pane",
     "bindings": { "f3": "search::SelectPreviousMatch" },
   },
-  //panel
-  { "bindings": { "alt-a": "agent::ToggleFocus" } },
-  { "bindings": { "alt-s": "project_panel::Toggle" } },
-  { "bindings": { "alt-d": "outline_panel::ToggleFocus" } },
   //wrap
   {
-    "context": "(Editor && mode == full)",
+    "context": "Editor",
     "bindings": { "alt-z": "editor::ToggleSoftWrap" },
   },
   //preview
