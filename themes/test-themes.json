@@ -1,0 +1,33 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Test themes",
+  "author": "Zed Industries",
+  "description": "Test themes",
+  "themes": [
+    {
+      "name": "empty",
+      "appearance": "dark",
+      "style": {}
+    },
+    {
+      "name": "polycarbonate",
+      "appearance": "dark",
+      "style": {
+        "background.appearance": "transparent",
+        "background": "#000D",
+        "editor.background": "#0000",
+        "editor.gutter.background": "#0000",
+        "panel.background": "#0000",
+        "terminal.background": "#0000",
+
+        "title_bar.background": "#000D",
+        "tab_bar.background": "#0000",
+        "tab.inactive_background": "#0000",
+        "toolbar.background": "#0000",
+        "status_bar.background": "#000D",
+
+        "elevated_surface.background": "#000D"
+      }
+    }
+  ]
+}
