@@ -55,6 +55,7 @@
   },
 
   //AI
+  "edit_predictions": { "mode": "subtle" },
   "agent_ui_font_size": 16,
   "agent_buffer_font_size": 16,
   "agent": {
@@ -80,26 +81,6 @@
               "images": true,
               "parallel_tool_calls": false,
               "prompt_cache_key": true,
-            },
-          },
-          {
-            "name": "doubao-seed-2.0-pro",
-            "max_tokens": 256000,
-            "capabilities": {
-              "tools": true,
-              "images": true,
-              "parallel_tool_calls": false,
-              "prompt_cache_key": false,
-            },
-          },
-          {
-            "name": "kimi-k2.5",
-            "max_tokens": 256000,
-            "capabilities": {
-              "tools": true,
-              "images": true,
-              "parallel_tool_calls": false,
-              "prompt_cache_key": false,
             },
           },
         ],
