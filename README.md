@@ -1,1 +1,1 @@
-My personal Zed configurations.
+Personal Zed config.

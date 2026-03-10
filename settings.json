@@ -1,5 +1,5 @@
 {
-  "theme": "Polycarbonate Sha1rholder (Experimental)",
+  "theme": "Polycarbonate sha1 (experimental)",
 
   //font
   "ui_font_fallbacks": ["Microsoft YaHei"],
@@ -59,6 +59,7 @@
   "agent_ui_font_size": 16,
   "agent_buffer_font_size": 16,
   "agent": {
+    "default_profile": "minimal",
     "default_model": {
       "provider": "Arc Code",
       "model": "doubao-seed-2.0-code",
