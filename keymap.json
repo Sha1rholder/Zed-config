@@ -1,9 +1,27 @@
 [
+  //edit
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-z": "editor::ToggleSoftWrap",
+      "alt-w": "editor::Fold",
+      "alt-e": "editor::UnfoldLines",
+      "ctrl-alt-s": "workspace::SaveWithoutFormat",
+      "shift-delete": "editor::DeleteLine",
+      "alt-shift-delete": "editor::DeleteToEndOfLine",
+      "ctrl-shift-delete": "editor::DeleteToBeginningOfLine",
+    },
+  },
+  //search
+  {
+    "context": "Pane",
+    "bindings": { "f3": "search::SelectPreviousMatch" },
+  },
   //panel
   { "bindings": { "alt-a": "agent::ToggleFocus" } },
   { "bindings": { "alt-s": "project_panel::Toggle" } },
   { "bindings": { "alt-d": "outline_panel::ToggleFocus" } },
-  //delete
+  //delete file
   {
     "context": "ProjectPanel",
     "bindings": { "delete": ["project_panel::Trash", { "skip_prompt": true }] },
@@ -17,21 +35,7 @@
     "context": "(Editor && extension == ps1)",
     "bindings": { "f5": ["task::Spawn", { "task_name": "Run pwsh" }] },
   },
-  //fold
-  {
-    "context": "Editor",
-    "bindings": { "alt-w": "editor::Fold", "alt-e": "editor::UnfoldLines" },
-  },
-  //search
-  {
-    "context": "Pane",
-    "bindings": { "f3": "search::SelectPreviousMatch" },
-  },
-  //wrap
-  {
-    "context": "Editor",
-    "bindings": { "alt-z": "editor::ToggleSoftWrap" },
-  },
+
   //preview
   {
     "context": "Editor && (extension == md || extension == svg)",

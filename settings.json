@@ -9,10 +9,8 @@
 
   //top to down
   "title_bar": { "show_user_menu": false },
+  "tab_bar": { "show_nav_history_buttons": false },
   "toolbar": { "quick_actions": false, "breadcrumbs": false },
-  "tab_bar": { "show": true, "show_nav_history_buttons": false },
-  "debugger": { "button": false },
-  "terminal": { "button": false },
   "search": { "center_on_match": true, "button": false },
   "project_panel": {
     "button": false,
@@ -20,6 +18,8 @@
     "hide_root": true,
     "bold_folder_labels": true,
   },
+  "debugger": { "button": false },
+  "terminal": { "button": false },
   "collaboration_panel": { "button": false },
   "notification_panel": { "button": false },
   "outline_panel": { "button": false },
@@ -40,9 +40,9 @@
   "git": { "inline_blame": { "enabled": false } },
 
   //behavior
-  "extend_comment_on_newline": false,
   "session": { "trust_all_worktrees": true },
   "when_closing_with_no_tabs": "close_window",
+  "extend_comment_on_newline": false,
 
   //languages
   "languages": {
