@@ -35,7 +35,6 @@
     "context": "(Editor && extension == ps1)",
     "bindings": { "f5": ["task::Spawn", { "task_name": "Run pwsh" }] },
   },
-
   //preview
   {
     "context": "Editor && (extension == md || extension == svg)",
